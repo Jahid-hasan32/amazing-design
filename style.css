@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #212121;
+}
+
+/* Navbar Styling */
+#main > nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 0 4vw;
+
+}
+
+nav .icon{
+    color: white;
+} 
+
+nav .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+nav .menu a {
+    color: white;
+}
+
+nav .register {
+    position: relative;
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .register a {
+    color: white;
+}
+.join {
+    border-bottom: 1px solid white;
+}
+
+
+/* Main Content / hero section */
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 50px);
+    color: white;
+    padding: 0 4vw;
+}
+
+.right_txt {
+    width: 30%;
+    height: 19%;
+    text-align: right;
+    margin-top: 50vh;
+    line-height: 3vh;
+}
+.midd_inner_txt {
+    height: 50%;
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.midd_inner_txt small{
+    font-size: 1vw;
+    letter-spacing: 2px;
+}
+
+.midd_inner_txt h1 {
+    font-size: 7.3vw;
+    font-weight: 100;
+}
+.midd_inner_txt h1 > span{
+    color: blue;
+}
+.mid_inner_img {
+    height: 50%;
+    width: 50%;
+    margin-left: 10rem;
+    border-radius: 140px 140px 0 0;
+    background-image: url(./right.avif);
+    
+}
+.left_txt {
+    width: 30%;
+    height: 19%;
+    text-align: left;
+    margin-top: 55vh;
+    line-height: 3vh;
+}
+
+.capsul {
+    height: 65%;
+    width: 18%;
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 100px;
+    top: 2rem;
+    left: 15rem;
+}
+
+.inner_cap {
+    width: 15%;
+    height: 11%;
+    border-radius: 100%;
+    transform: translateX(100%);
+    border: 1px solid rgb(242, 97, 45);
+}
+
+/* Responsive Design  */
+@media screen and (max-width:500px){
+    nav {
+        font-size: 12px;
+    }
+
+    nav .menu {
+        width: 33%;
+    }
+
+    nav .register {
+        width: 28%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:900px){
+    nav .register {
+        width: 22%;
+    }
+
+    nav .menu {
+        width: 35%;
+    }
+}
